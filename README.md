@@ -1,6 +1,6 @@
 # autoGo
 
-This code allows you to control the button a Pokemon Go Plus accessory with an Arduino, and also incorporates 2 scripts which allow the Plus to stay connected indefinitely.
+This code allows you to control the button of a Pokemon Go Plus accessory with an Arduino, and also incorporates 2 scripts which allow the Plus to stay connected indefinitely.
 The code was developed on Ubuntu 14.04 LTS using an Arduino Nano and an Omron G6D-1A relay. The Arduino wiring diagram can be found below.
 
 ## Setup
@@ -22,7 +22,7 @@ The Arduino wiring diagram will be added shortly.
 ## go_plus_daemon.py
 This script is run from the computer (e.g. Ubuntu) and will perform the following tasks - 
 - check Pokemon Go Plus icon status on the screen using adb
-- if the Plus is disconnected, the button the Plus will be pushed and an input tap on the Plus icon will be sent to the device via adb
+- if the Plus is disconnected, the button of the Plus will be pushed and an input tap on the Plus icon will be sent to the device via adb
 - Vibration times will be measured and translated into events such as "Pokemon caught" or "Pokemon not caught"
 - Prints a summary every 10 minutes of the total # of reconnects, pokemon caught, and pokemon fled
 
